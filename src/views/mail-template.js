@@ -24,7 +24,7 @@ export const getMailOne = ({
           <p>${message}</p>
           <br />
           <p>Best regards,</p>
-          <p>YCN</p>
+          <p>Restaurant Franchisee</p>
         </body>
       </html>
     `;

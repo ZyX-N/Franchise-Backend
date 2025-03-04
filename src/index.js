@@ -43,7 +43,7 @@ app.post('/enquiry', async (req, res) => {
 
   const mailInfo = {
     from: MAILER_EMAIL,
-    to: 'aman.softfix@gmail.com',
+    to: 'restaurantfranchisee3@gmail.com',
     subject: 'Business Lead',
     html: getMailOne({ firstName, lastName, email, phoneNumber, city, currentBusiness, preferredBrand, investmentRange, message })
   }
