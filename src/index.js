@@ -13,7 +13,7 @@ const app = express();
 /***************
   MIDDLEWARE 
 ****************/
-api.use(cors({
+app.use(cors({
   origin: true,
   credentials: true
 }))
