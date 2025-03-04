@@ -6,12 +6,17 @@ import http from 'http';
 import ModelOne from './models/Model-One.js';
 import { sendMail } from '../config/mailer.js';
 import { getMailOne } from './views/mail-template.js';
+import cors from "cors";
 
 const app = express();
 
 /***************
   MIDDLEWARE 
 ****************/
+api.use(cors({
+  origin: true,
+  credentials: true
+}))
 app.use(express.json({ limit: '1mb' }));
 
 app.post('/enquiry', async (req, res) => {
